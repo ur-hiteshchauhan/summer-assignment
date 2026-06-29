@@ -1,0 +1,20 @@
+//Keep counting characters until '\0' (null character) is found.
+#include <stdio.h>
+
+int main()
+{
+    char str[100];
+    int length = 0;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    while(str[length] != '\0')
+    {
+        length++;
+    }
+
+    printf("Length = %d", length);
+
+    return 0;
+}
